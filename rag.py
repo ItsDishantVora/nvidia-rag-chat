@@ -46,7 +46,7 @@ def vector_embedding(file_path):
         if st.session_state.vectors is None:
             return  # Exit if vector store creation failed
 
-st.title("NVIDIA NIM Demo")
+st.title("NVIDIA NIM RAG App")
 llm = ChatNVIDIA(model="meta/llama3-70b-instruct")
 
 qa_system_prompt = """You are an assistant for question-answering tasks. \
